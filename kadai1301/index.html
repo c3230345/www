@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Button Actions</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+#section1 {
+    background-color: lightblue;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+}
+
+#section2 {
+    background-color: bisque;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex : 1;
+}
+
+#section3 {
+    background-color: pink;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+}
+
+#section4 {
+    background-color: mediumaquamarine;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#section1 button {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+#section2 button {
+    background-color: #FF5722;
+    color: white;
+}
+ 
+#section3 button {
+    background-color: #2196F3;
+    color: white;
+}
+ 
+#section4 button {
+    background-color: #FFEB3B;
+    color: black;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<body>
+    <header>
+        <h1>Responsive Design with Button Actions</h1>
+    </header>
+    <div class="container">
+        <section id="section1">
+            <h2>Section1</h2>
+            <p>This is the first section. It has a light blue 
+                background, padding ,margin,and a box 
+                shadow. The layout adjusts responsively to 
+                different screen sizes.
+            </p>
+            <img src="section1.jpg" alt="Section 1 Image">
+            <button onclick="showAlert('セクション1のボタンがクリックされました')">Click Me</button>
+        </section>
+        <section id="section2">
+            <h2>Section2</h2>
+            <p>This is the second section. It has a light 
+                orange background, padding, margin, and a 
+                dox shadow. The layout adjusts responsively
+                to different screen sizes.
+            </p>
+            <img src="section2.jpg" alt="Section 2 Image">
+            <button onclick="showAlert('セクション2のボタンがクリックされました')">Click Me</button>
+        </section>
+        <section id="section3">
+            <h2>Section3</h2>
+            <p>This is the thrid section. It has a light purple
+                background, padding, maargin, and a box 
+                shadow. The layout adjusts reaponsively to 
+                different screen sizes.
+            </p>
+            <img src="section3.jpg" alt="Section 3 Image">
+            <button onclick="showAlert('セクション3のボタンがクリックされました')">Click Me</button>
+        </section>
+        <section id="section4">
+            <h2>Section4</h2>
+            <p>This is the fourth section. It has a light green 
+                background, padding, margin, and a box 
+                shadow. The layout adjusts responsively to 
+                different screen sizes.
+            </p>
+            <img src="section4.jpg" alt="Section 4 Image">
+            <button onclick="showAlert('セクション4のボタンがクリックされました')">Click Me</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Responsive Design with Button Actions</p>
+    </footer>
+    <script>
+        function showAlert(section) {
+            alert(section);
+        }
+</script>
+</body>
+</html>
