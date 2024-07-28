@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岐阜協立大学　ランディングページ</title>
+</head>
+<style>
+header{
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    background-image: url('section1.jpg');
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    font-size: 17px;
+}
+body{
+    background-color: #A0BDE6;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+#section1{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+    text-align: center;
+}
+#section2{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+    text-align: center;
+}
+#section3{
+    background-color: paleturquoise;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+    text-align: center;
+}
+#section4{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#section5{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+#section6{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#section7{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#section8{
+    background-color: white;
+    text-align: right;
+    height: 60px;
+}
+#section9{
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex :1;
+    text-align: center;
+    font-size: 20px; 
+}
+button {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    font-size: 37px;
+    margin: 20px auto; 
+    padding: 10px 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+@media (min-width: 1025px){
+    #section4{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section5{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section6{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    #section4{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section5{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section6{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+}
+@media (max-width: 768px) {
+    #section4{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section5{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+    #section6{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 400px;
+        flex: 1;
+    }
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+</style>
+<body>
+<header>
+    <h1>岐阜協立大学　経営情報学科</h1>
+</header>
+    <section id = "section9">
+        <h1>経営で必要な知識を幅広く</h1>
+    </section>
+    <section id = "section2">
+    <h3>岐阜協立大学経営学部情報メディア学科は<br>
+        2024年4月に学科名が「経営情報学科」へと変更になりました</h3>
+    </section>
+
+    <section id = "section3">
+    <section id = "section7">
+    <h1>経営情報学科での学び</h1>
+    </section>
+
+    <div class="container">
+    <section id="section4">
+    <button onclick="showAlert('経営学、マーケティングなどについて学べます')">経営</button>
+    <p></p>
+    </section>
+    <section id="section5">
+        <button onclick="showAlert('プログラミング、Web制作などが学べます')">情報</button>
+    </section>
+    <section id="section6">
+        <button onclick="showAlert('簿記、金融リテラシーなどが学べます')">会計</button>
+    </section>
+    </div>
+
+    <section id = "section1">
+    <h3>3つの分野を学べるカリキュラムで、<br>
+        それぞれの専門知識を融合し、最先端のテクノロジーを活用して、<br>
+        新しい価値を創造する力を身につけます</h3>
+    </section>
+    </section>
+
+    <section id = "section8">
+        <button onclick="showAlert('資料を送ります')">資料請求</button>
+    </section>
+    <footer>
+        <h3>北方キャンパス 〒503-8550 大垣市北方町5-50  TEL：0584-77-3511（代）</h3>
+        <h3>西之川キャンパス 〒503-8554 大垣市西之川町1-109</h3>
+    </footer>
+    <script>
+        function showAlert(section) {
+            alert(section);
+        }
+</script>
+</body>
+</html>
+
+  
+   
