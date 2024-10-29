@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素と取得内容の変更</title>
+</head>
+<style>
+    #tokyo{
+        color: red;
+    }
+</style>
+<body>
+    <h1>座席の予約</h1>
+    <p>東京会場<span id = tokyo>(予約受付中)</span></p>
+    <div id = kyoto><button onclick="change();">予約する</button></div>
+<script>
+    function change(){
+        document.getElementById("tokyo").textContent='(予約済み)';
+        document.getElementById("kyoto").textContent='ありがとうございました。';
+    }
+</script>
+</body>
+</html>
