@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の戻り値</title>
+</head>
+<style>
+    .message {
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <h1>１～１０で割り切れる数字</h1>
+    <p>１、２、３、４、５、６、７、８、９、１０で</p>
+    <p>割り切れる最小の数値をJavaScriptで求めます。</p>
+    <button onclick="show()">結果を見る</button>
+    <div id="message" style="background-color: antiquewhite;padding: 10px;width: 350px; ">
+        ここに結果が表示されます。</div>
+</body>
+<script>
+    function gcd(a, b) {
+        return b === 0 ? a : gcd(b, a % b); 
+    }
+
+    function lcm(a, b) {
+        return (a * b) / gcd(a, b); 
+    }
+
+    function show() {
+        let result = 1;
+        for (let i = 1; i <= 10; i++) {
+            result = lcm(result, i);
+        }
+        document.getElementById("message").textContent = `1〜10で割り切れる最小の数は ${result} です。`;
+    }
+</script>
+</html>
