@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数値の入力とエラー処理</title>
+</head>
+<style>
+    .message {
+        background-color: salmon;
+    }
+</style>
+<body>
+    <h1>n～mで割り切れる数字</h1>
+    <p>1～10の好きな範囲で</p>
+    <p>割り切れる最小の数値をJavaScriptで求めます。</p>
+    <button onclick="show()">範囲を指定</button>
+    <div id="message" style="background-color: peachpuff;padding: 10px;width: 350px; ">
+        ここに結果が表示されます。</div>
+</body>
+<script>
+    function gcd(a, b) {
+        return b === 0 ? a : gcd(b, a % b); 
+    }
+
+    function lcm(a, b) {
+        return (a * b) / gcd(a, b); 
+    }
+
+    function show() {
+        let min = parseInt(prompt('範囲の最小値を1～10で入力してください'));
+        let max = parseInt(prompt('範囲の最大値を1～10で入力してください'));
+
+        if (min > max || min < 1 || max > 10) {
+            alert('1～10の範囲を正しく指定してください');
+            return;
+        }
+
+        let result = 1;
+        for (let i = min; i <= max; i++) {
+            result = lcm(result, i);
+
+        document.getElementById('message').textContent = `${min}～${max}の範囲で割り切れる最小の数は ${result} です。`;
+    }
+}
+</script>
+</html>
